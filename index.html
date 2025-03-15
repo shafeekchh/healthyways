@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>My Awesome Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My GitHub Website!</h1>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Awesome Website</h1>
+            <p>Your one-stop destination for amazing content and services.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate individuals dedicated to creating awesome websites.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>We create beautiful and responsive websites.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>We help your website rank higher on search engines.</p>
+            </div>
+            <div class="card">
+                <h3>Content Creation</h3>
+                <p>We provide engaging content for your audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MySite. All rights reserved.</p>
+    </footer>
 </body>
 </html>
