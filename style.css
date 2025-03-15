@@ -16,9 +16,12 @@ a {
 
 /* Header and Navigation */
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -44,10 +47,11 @@ nav {
 .nav-links li a {
     color: #fff;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #ff6b6b;
+    color: #ffeb3b;
 }
 
 /* Hero Section */
@@ -102,19 +106,19 @@ nav {
     margin: 0 auto;
 }
 
-/* Services Section */
-.services {
+/* Benefits Section */
+.benefits {
     padding: 4rem 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
 
-.services h2 {
+.benefits h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.service-cards {
+.benefits-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -130,6 +134,12 @@ nav {
     text-align: center;
 }
 
+.card i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -139,10 +149,53 @@ nav {
     font-size: 1rem;
 }
 
+/* Tips Section */
+.tips {
+    padding: 4rem 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tips h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.tips-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tip {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.tip i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.tip h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tip p {
+    font-size: 1rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 4rem 20px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -167,7 +220,7 @@ nav {
 }
 
 .contact button {
-    background-color: #ff6b6b;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -178,7 +231,7 @@ nav {
 }
 
 .contact button:hover {
-    background-color: #ff4c4c;
+    background-color: #45a049;
 }
 
 /* Footer */
@@ -188,4 +241,19 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
 }
